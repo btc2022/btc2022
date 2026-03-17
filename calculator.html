@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        input[type="text"] { width: 100%; padding: 10px; }
+        button { padding: 10px; margin: 5px; }
+        #result { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <input type="text" id="input" placeholder="Enter calculation (e.g. 2 + 2)">
+    <button onclick="calculate()">Calculate</button>
+    <div id="result"></div>
+    <script>
+        function calculate() {
+            let input = document.getElementById('input').value;
+            try {
+                let result = eval(input);
+                document.getElementById('result').innerText = 'Result: ' + result;
+            } catch (e) {
+                document.getElementById('result').innerText = 'Error: Invalid Calculation';
+            }
+        }
+    </script>
+</body>
+</html>
