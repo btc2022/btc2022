@@ -1,0 +1,49 @@
+.app {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 2rem;
+}
+
+.hero {
+  width: min(100%, 720px);
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid #d8d8dd;
+  border-radius: 999px;
+  color: #5b5b66;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  color: #18181b;
+  font-size: clamp(2.75rem, 8vw, 5.75rem);
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+}
+
+p {
+  max-width: 540px;
+  margin: 2rem auto 0;
+  color: #65656f;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+}
+
+code {
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.35rem;
+  background: #ededf0;
+  color: #34343b;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+}

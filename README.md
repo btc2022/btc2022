@@ -1,52 +1,21 @@
-# Python Voice Recorder
+# React Starter
 
-Простой голосовой рекордер на Python. Записывает звук с микрофона в .wav файл за несколько строк кода.
+Чистий стартовий React-проєкт на базі Vite.
 
-## 📦 Установка
+## Запуск
 
-1. Создайте виртуальное окружение:
-   ```
-   python -m venv venv
-   ```
-
-2. Активируйте (Windows):
-   ```
-   venv\\Scripts\\activate
-   ```
-
-3. Установите зависимости:
-   ```
-   pip install -r requirements.txt
-   ```
-
-**Примечание для Windows:** Если ошибка с sounddevice, установите PortAudio:
-- Скачайте с https://www.portaudio.com/download.html (Windows binary).
-- Или используйте conda: `conda install portaudio`.
-
-## 🚀 Запуск
-
-```
-python voice_recorder.py
+```bash
+npm install
+npm run dev
 ```
 
-- Введите количество секунд для записи (например, 5).
-- Нажмите Enter — начнется запись.
-- Говорите в микрофон.
-- Файл сохранится как `recording_YYYYMMDD_HHMMSS.wav`.
+Після запуску відкрийте адресу, яку покаже Vite у терміналі.
 
-## Пример
+## Команди
 
-```
-Enter recording duration in seconds: 10
-Recording for 10.0 seconds... Speak into the microphone!
-Recording saved as recording_20241005_143022.wav
-```
+- `npm run dev` — запустити сервер розробки.
+- `npm run build` — зібрати production-версію.
+- `npm run lint` — перевірити код ESLint.
+- `npm run preview` — локально переглянути production-збірку.
 
-## 🛠️ Файлы
-
-- `voice_recorder.py` — основной скрипт.
-- `requirements.txt` — зависимости.
-- `TODO.md` — прогресс.
-
-Готово к использованию в проектах, видео или подкастах!
-
+Основний компонент застосунку знаходиться у `src/App.jsx`.
